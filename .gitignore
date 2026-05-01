@@ -1,0 +1,10 @@
+build/
+.cpm-cache/
+*.exe
+*.lib
+*.dll
+*.obj
+*.o
+*.pdb
+target/
+Cargo.lock

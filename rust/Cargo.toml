@@ -1,0 +1,22 @@
+[package]
+name = "astrakv"
+version = "0.1.0"
+edition = "2021"
+description = "Thread-safe embedded key-value store with sorted sets"
+license = "Apache-2.0"
+links = "astrakv"
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "kv_bench"
+harness = false
+
+[build-dependencies]
+cmake = "0.1"
+bindgen = "0.70"
